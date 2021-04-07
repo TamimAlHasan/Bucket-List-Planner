@@ -1,0 +1,139 @@
+/* importing google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,  #FA8072, #f8d0ca);
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 55px;
+    color:  #0b1e46;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    font-family:"Poppins", sans-serif;
+    font-size: 19px;
+    padding: 15px;
+    border: none;
+    background: white;
+}
+
+form input:focus, form button:focus{
+    outline: none;
+}
+
+form button{
+    color:#FA8072;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    color: white;
+    background:#FA8072;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list{
+    list-style: none;
+    min-width: 20%;
+    margin-top:50px;
+}
+
+.task{
+    padding: 10px;
+    background: white;
+    margin-bottom: 5px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.task li{
+    flex: 1;
+}
+
+.task-item{
+    margin-right: 8px;
+}
+
+.check, .trash {
+    background: rgb(255, 127, 80);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 1px rgba(130, 130, 140, 0.4);
+}
+
+.check{
+    background: rgb(33, 223, 144);
+}
+
+.trash:focus,
+.check:focus {
+    outline: none;
+}
+
+.check:hover {
+    background: rgb(255, 253, 250);
+    color: rgb(31, 223, 143);
+}
+.trash:hover {
+    background: rgb(255, 253, 250);
+    color: rgb(255, 127, 80);
+}
+
+.fa-check,.fa-trash{
+    pointer-events: none;
+}
+
+.footer{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.underline{
+    color: #2a8aeb;
+}
+
+.complete{
+    text-decoration: line-through;
+    opacity: 0.9;
+    color: rgba(130, 130, 140, 0.4);
+}
+
+.delete{
+    transform:translateY(45px) rotateZ(20deg);
+    opacity: 0;
+}
